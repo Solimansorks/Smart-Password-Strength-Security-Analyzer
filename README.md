@@ -2,7 +2,9 @@
 
 VaultGuard is a modern, user-friendly password strength tester and secure password generator. It helps users evaluate the strength of their passwords in real-time and educates them on password best practices.
 
-![VaultGuard Preview](preview.png) <!-- Optional if you add screenshot -->
+## 📸 Live Preview
+
+![VaultGuard Screenshot](screencapture-file-E-password-tester-and-generator-index-html-2025-07-13-22_51_43.png)
 
 ## 🚀 Features
 
@@ -26,16 +28,6 @@ VaultGuard is a modern, user-friendly password strength tester and secure passwo
 - CSS3
 - JavaScript (ES6)
 - Font Awesome (Icons)
-
-## 📸 UI Components
-
-- Shield logo
-- Form input for password
-- Buttons: Copy, Toggle View, Generate Password
-- Strength meter bar
-- Password requirements checklist
-- Crack time estimation
-- Success feedback message
 
 ## 📦 Installation
 
