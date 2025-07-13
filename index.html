@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password strength Tester</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <h1>Password strength Tester</h1>
+        
+        <div class="form-group">
+            <label for="password">Enter Password to Analyze</label>
+            <div class="input-wrapper">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" id="password" class="form-control" placeholder="Type or paste a password">
+                <button class="copy-btn" id="copy-password" title="Copy password">
+                    <i class="far fa-copy"></i>
+                    <span class="tooltip">Copy to clipboard</span>
+                </button>
+                <button class="toggle-password" id="toggle-password">
+                    <i class="far fa-eye"></i>
+                </button>
+            </div>
+            <div class="strength-meter">
+                <div class="strength-bar" id="strength-bar"></div>
+            </div>
+            <div class="strength-text" id="strength-text">Very Weak</div>
+        </div>
+        
+        <button class="generate-btn" id="generate-password">
+            <i class="fas fa-random"></i> Generate Strong Password
+        </button>
+        
+        <div class="requirements">
+            <h3>Password Requirements:</h3>
+            <div class="requirement-item" id="length-req">
+                <i class="fas fa-circle"></i>
+                <span>At least 8 characters long</span>
+            </div>
+            <div class="requirement-item" id="uppercase-req">
+                <i class="fas fa-circle"></i>
+                <span>Contains uppercase letters</span>
+            </div>
+            <div class="requirement-item" id="lowercase-req">
+                <i class="fas fa-circle"></i>
+                <span>Contains lowercase letters</span>
+            </div>
+            <div class="requirement-item" id="number-req">
+                <i class="fas fa-circle"></i>
+                <span>Contains numbers</span>
+            </div>
+            <div class="requirement-item" id="special-req">
+                <i class="fas fa-circle"></i>
+                <span>Contains special characters</span>
+            </div>
+        </div>
+        
+        <div class="time-to-crack" id="time-to-crack">
+            <i class="fas fa-clock"></i>
+            <span id="crack-time-text">Time to crack: less than a second</span>
+        </div>
+        
+        <div class="feedback" id="success-feedback">
+            <i class="fas fa-check-circle"></i>
+            <span>Excellent! This password meets all security requirements.</span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
